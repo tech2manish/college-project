@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Books Store</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main_page {
+            text-align: center;
+        }
+
+        .cont_heading {
+            padding-top: 20px;
+            color: brown;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .contact_details {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+
+        .material_icon {
+            size: 18px;
+        }
+
+        .massage_container {
+            display: flex;
+            flex-direction: row;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .user_details {
+            flex: 1;
+            margin: 5px;
+
+
+
+        }
+
+        .user_massage {
+            flex: 1;
+
+        }
+
+        @media(max-width:900px) {
+            .massage_container {
+                flex-direction: column;
+            }
+
+            .user_details,
+            .user_massage {
+                flex: unset;
+            }
+
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin: 7px;
+            border: 2px solid gray;
+            border-radius: 4px;
+            height: 100%;
+            width: 72%;
+
+        }
+
+        input[type="submit"] {
+            margin-bottom: 40px;
+            padding: 10px;
+            width: 30%;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(23, 86, 86);
+            font-size: 15px;
+            color: aliceblue;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(0, 132, 88);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src=".//Photos/logo.png" alt="">
+        <h1>MIT Books Store</h1>
+    </header>
+
+    <nav>
+        <div class="left-nav">
+            <a href="index.html" id="showProduct">Home</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
+
+    </nav>
+
+    <main class="main_page">
+        <h2 class="cont_heading">Get In Touch</h2>
+        <div class="contact_details">
+            <p> <i class="material-icons">&#xe551;</i> Phone: +91 9876543210</p>
+            <p><i class="material-icons">&#xe554;</i> Email: support@mitbooksstore.com</p>
+            <p> <i class="material-icons">&#xe55f;</i> Meerut Institute of Technology, NH 58, Baral partapur, Meerut, UP
+                (250103)</p>
+        </div>
+
+        <!--Container to take massege from user end-->
+        <div class="card_view_box">
+            <form id="myform" action="">
+                <div class="massage_container">
+                    <div class="user_details">
+                        <p>Name * <input type="text" id="name" name="name" placeholder="Manish kumar" required></p>
+                        <p>Email * <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+                        </p>
+                    </div>
+                    <div class="user_massage">
+                        <p>Massege(optional) <textarea name="user_massage" id="user_massage"
+                                placeholder="Leave a massage here" cols="30" rows="5"></textarea></p>
+                    </div>
+                </div>
+                <input type="submit" value="Send Massage" id="send_massage">
+
+            </form>
+        </div>
+
+    </main>
+
+
+    <!-- footer section of the main page  -->
+    <footer>
+        <h4>&#169;2024 MIT Books Store. All rights reserved | <a href="contact-us.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="faqs.html">FAQs</a></h4>
+    </footer>
+
+</body>
+
+</html>
