@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIT Books Store</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <img src=".//Photos/logo.png" alt="">
+    <h1>MIT Books Store</h1>
+  </header>
+
+  <nav>
+    <div class="left-nav">
+      <a href="#" id="toggleButton"><img src="/Photos/menu.png" alt="menu"></a>
+      <a href="#" id="showProduct">Home</a>
+      <a href="#">Catalogue</a>
+      <a href="#">Cart</a>
+    </div>
+    <div class="right-nav">
+      <input type="search" name="search" id="searchInput" oninput="filterCards()" placeholder="Search">
+      <a href="#" class="showLogin">Login/Signup</a>
+      <a href="#"><img src="/Photos/shopping-bag.png" alt="sopping bag"></a>
+    </div>
+  </nav>
+
+  <main>
+    <div id="floatingSection" class="left_container">
+      <h2>Filter</h2>
+      <h3>Language:</h3>
+      <p><input type="checkbox">English</p>
+      <p><input type="checkbox">Hindi</p>
+      <h3>Price:</h3>
+      <input  type="range" >
+      
+    </div>
+
+
+    <!-- Main container  -->
+    <div class="right_container">
+
+
+      <!-- Login form page  -->
+      <div class="login-form">
+
+        <form class="form" action="">
+          <h2>Login</h2>
+          <label for="email-label">Email:</label>
+          <input class="email" id="email-label" type="email" name="email" required>
+          <label for="password-label">Password:</label>
+          <input class="password" id="password-label" type="password" name="password" required>
+          <div class="button">
+            <button>Login</button>
+            <hr>
+            <p>Don't have an account? <a href="#" id="showSignup">Signup</a></p>
+          </div>
+        </form>
+
+
+      </div>
+
+
+      <!-- Signup form page  -->
+      <div class="signup-form">
+        <form class="form" action="">
+          <h2>Signup</h2>
+          <label for="name-label">Name:</label>
+          <input class="name" id="name-label" type="text" name="name" required>
+          <label for="email-label">Email:</label>
+          <input class="email" id="email-label" type="email" name="email" required>
+          <label for="password-label">Password:</label>
+          <input class="password" id="password-label" type="password" name="password" required>
+          <label for="conform-password-label">Conform Password:</label>
+          <input class="password" id="conform-password-label" type="conform-password" name="conform-password" required>
+          <div class="button">
+            <button>Signup</button>
+            <hr>
+            <p>Already have an account? <a href="#" class="showLogin">Login</a></p>
+          </div>
+        </form>
+
+      </div>
+
+
+      <!-- Product container for Catalogue -->
+      <div class="product-container">
+        <div id="productContainer">
+          <div class="product-card">
+            <img src="./Photos/img1.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">Computer Science & Engineering</h2>
+              <p class="product-description">English, GK Publications, Computer Science & Engineering</p>
+              <p class="product-price">&#8377;206.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img2.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">Computer System Architecture</h2>
+              <p class="product-description">English, Paperback, Mano M. Morris, Computer System Architecture</p>
+              <p class="product-price">&#8377;613.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img9.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">Physics Part-1 NCERT Book For Class 12</h2>
+              <p class="product-description">NCERT Physics, CBSE, BSEB, 12th, English, Physics Part-1</p>
+              <p class="product-price">&#8377;210.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img11.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">Chemistry 2 - NCERT Book For Class 11 Chemistry</h2>
+              <p class="product-description">NCERT Chemistry, CBSE, BSEB, 11th, English, Chemistry 2</p>
+              <p class="product-price">&#8377;135.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="/Photos/img4.jpg" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">Believe in Yourself</h2>
+              <p class="product-description">English, Dr. Joseph Murphy, Manjul Publishing House, Believe in Yourself
+              </p>
+              <p class="product-price">&#8377;105.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img3.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">Digital Design, Global Edition</h2>
+              <p class="product-description">English, Paperback, Mano M. Morris, Digital Design, Global Edition</p>
+              <p class="product-price">&#8377;7250.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img8.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">Physics Part-2 NCERT Book For Class 12</h2>
+              <p class="product-description">NCERT Physics, CBSE, BSEB, 12th, English, Physics Part-2</p>
+              <p class="product-price">&#8377;155.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img12.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">NCERT Physics Class 11 Part 1</h2>
+              <p class="product-description">NCERT Physics, CBSE, BSEB, 11th, English, Physics Part-1</p>
+              <p class="product-price">&#8377;175.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img10.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">Mathematics Part 1 - NCERT Book For Class 12</h2>
+              <p class="product-description">NCERT Mathematics, CBSE, BSEB, 12th, English, Mathematics Part 1</p>
+              <p class="product-price">&#8377;145.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img7.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">NCERT Mathematics Book For Class-10</h2>
+              <p class="product-description">NCERT Mathematics, CBSE, BSEB, 10th, English</p>
+              <p class="product-price">&#8377;175.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img6.webp" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">CBSE Chapterwise Solved Papers 2023-2010 PCM</h2>
+              <p class="product-description">English, ( Paperback, SK Singh, Reena Sharma, Shahana Ansari, Laxman
+                Prasad,
+                Sagar Verma)</p>
+              <p class="product-price">&#8377;820.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="/Photos/img5.jpg" alt="Product Image" class="product-image">
+            <div class="product-details">
+              <h2 class="product-title">The Power Of Your Subconscious Mind</h2>
+              <p class="product-description"> English, Dr. Joseph Murphy, Arushi Book Enterprises</p>
+              <p class="product-price">&#8377;115.00</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- footer section of the main page  -->
+  <footer>
+    <h4>&#169;2023 || Alrights reserved by <strong>MIT Books Store</strong></h4>
+  </footer>
+
+
+
+  <!-- script link part of the page JS  -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
