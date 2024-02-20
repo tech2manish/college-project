@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Books Store | Our teams</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 65%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            /* border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            overflow: hidden;
+        }
+        .team-member {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .team-member img {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            margin-right: 40px;
+        }
+        .team-member:nth-child(even) img {
+            order: 2;
+            margin-right: 0px;
+            margin-left: auto;
+        }
+        .team-member h2 {
+            margin: 0;
+            font-size: 30px;
+            color: #333;
+        }
+
+        .team-member .position {
+            margin: 0;
+            font-size: 22px;
+            color: #666;
+        }
+        .team-member p {
+            margin: 0;
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src=".//Photos/logo.png" alt="">
+        <h1>MIT Books Store</h1>
+    </header>
+
+    <nav>
+        <div class="left-nav">
+            <a href="#" id="toggleButton"><img src="/Photos/menu.png" alt="menu"></a>
+            <a href="index.html">Home</a>
+            <a href="#" id="showProduct">Catalogue</a>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="our-teams.html">Our Teams</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </li>
+        </div>
+        <!-- <div class="right-nav">
+            <input type="search" name="search" id="searchInput" oninput="filterCards()" placeholder="Search">
+            <a href="#" class="showLogin">Login/Signup</a>
+            <a href="#"><img src="/Photos/shopping-bag.png" alt="sopping bag"></a>
+        </div> -->
+    </nav>
+
+    <main>
+
+        <div class="container">
+            <div class="team-member">
+                <img src=".//Photos/manish kumar.jpg" alt="Team Member 1">
+                <div>
+                    <h2>Manish Kumar</h2>
+                    <p class="position">Position: Team Head</p>
+                    <p>Description: Student at Meerut Institute of Technology, Meerut. Campus Ambassdor at MyGov India & Emertxe IT.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div>
+                    <h2>Manish Chaudhary</h2>
+                    <p class="position">Position: Team Member</p>
+                    <p>Description: Student at Meerut Institute of Technology, Meerut.</p>
+                </div>
+                <img src=".//Photos/manish chaudhary.png" alt="Team Member 2">
+            </div>
+            <div class="team-member">
+                <img src=".//Photos/aman faiz.jpg" alt="Team Member 3">
+                <div>
+                    <h2>Aman Faiz</h2>
+                    <p class="position">Position: Team Member</p>
+                    <p>Description: Student at Meerut Institute of Technology, Meerut.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div>
+                    <h2>Dev kumar</h2>
+                    <p class="position">Position: Team Member</p>
+                    <p>Description: Student at Meerut Institute of Technology, Meerut.</p>
+                </div>
+                <img src=".//Photos/dev kumar.png" alt="Team Member 4">
+            </div>
+        </div>
+
+    </main>
+    <!-- footer section of the main page  -->
+    <footer>
+        <h4>&#169;2024 MIT Books Store. All rights reserved | <a href="contact-us.html">Contact Us</a> | <a
+                href="privacy-policy.html">Privacy Policy</a> | <a href="faqs.html">FAQs</a></h4>
+    </footer>
+
+</body>
+
+</html>
