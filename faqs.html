@@ -4,34 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIT Books Store</title>
+  <title>MIT Books Store | FAQs</title>
   <link rel="stylesheet" href="style.css">
   <style>
     .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
+      max-width: 65%;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-h1, h2, h3 {
-    margin-top: 0;
-}
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
 
-h1 {
-    font-size: 36px;
-}
+    h1 {
+      font-size: 36px;
+    }
 
-h2 {
-    font-size: 24px;
-}
+    h2 {
+      font-size: 24px;
+    }
 
-p {
-    margin-bottom: 20px;
-}
+    p {
+      margin-bottom: 20px;
+    }
 
-.bold {
-    font-weight: bold;
-}
+    .bold {
+      font-weight: bold;
+    }
   </style>
 
 </head>
@@ -45,35 +50,55 @@ p {
 
   <nav>
     <div class="left-nav">
-      <a href="index.html" id="showProduct">Home</a>
-      <a href="contact-us.html">Contact Us</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="faqs.html">FAQs</a>
+      <a href="#" id="toggleButton"><img src="/Photos/menu.png" alt="menu"></a>
+      <a href="index.html">Home</a>
+      <a href="#" id="showProduct">Catalogue</a>
+      <li>
+        <a href="#">About Us</a>
+        <ul>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="our-teams.html">Our Teams</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </li>
     </div>
-   
+    <!-- <div class="right-nav">
+      <input type="search" name="search" id="searchInput" oninput="filterCards()" placeholder="Search">
+      <a href="#" class="showLogin">Login/Signup</a>
+      <a href="#"><img src="/Photos/shopping-bag.png" alt="sopping bag"></a>
+    </div> -->
   </nav>
 
   <main>
     <div class="container">
-        <h1>Frequently Asked Questions (FAQs)</h1>
-        
-        <h2>1. How can I place an order?</h2>
-        <p>To place an order, simply browse our catalog, select the books you want to purchase, and add them to your shopping cart. Proceed to checkout, fill in your shipping and payment details, and confirm your order.</p>
-        
-        <h2>2. What payment methods do you accept?</h2>
-        <p>We accept payments via credit/debit cards (Visa, MasterCard, American Express), PayPal, and other secure payment gateways. We do not accept cash on delivery.</p>
-        
-        <h2>3. How do I track my order?</h2>
-        <p>Once your order has been shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and delivery of your package.</p>
-        
-        <h2>4. Do you ship internationally?</h2>
-        <p>Yes, we offer international shipping to many countries worldwide. Shipping costs and delivery times may vary depending on the destination.</p>
-        
-        <h2>5. What is your return policy?</h2>
-        <p>We accept returns within 30 days of delivery for a full refund or exchange. The returned items must be in their original condition with all tags and packaging intact. Please contact our customer support team for assistance with returns.</p>
-        
-        <h2>6. How can I contact customer support?</h2>
-        <p>You can contact our customer support team via email at <span class="bold">support@mitbooksstore.com</span> or by filling out the contact form on our website. We strive to respond to all inquiries within 24 hours.</p>
+      <h1>Frequently Asked Questions (FAQs)</h1>
+
+      <h2>1. How can I place an order?</h2>
+      <p>To place an order, simply browse our catalog, select the books you want to purchase, and add them to your
+        shopping cart. Proceed to checkout, fill in your shipping and payment details, and confirm your order.</p>
+
+      <h2>2. What payment methods do you accept?</h2>
+      <p>We accept payments via credit/debit cards (Visa, MasterCard, American Express), PayPal, and other secure
+        payment gateways. We do not accept cash on delivery.</p>
+
+      <h2>3. How do I track my order?</h2>
+      <p>Once your order has been shipped, you will receive a confirmation email with a tracking number. You can use
+        this tracking number to monitor the status and delivery of your package.</p>
+
+      <h2>4. Do you ship internationally?</h2>
+      <p>Yes, we offer international shipping to many countries worldwide. Shipping costs and delivery times may vary
+        depending on the destination.</p>
+
+      <h2>5. What is your return policy?</h2>
+      <p>We accept returns within 30 days of delivery for a full refund or exchange. The returned items must be in their
+        original condition with all tags and packaging intact. Please contact our customer support team for assistance
+        with returns.</p>
+
+      <h2>6. How can I contact customer support?</h2>
+      <p>You can contact our customer support team via email at <span class="bold">support@mitbooksstore.com</span> or
+        by filling out the contact form on our website. We strive to respond to all inquiries within 24 hours.</p>
     </div>
 
   </main>
@@ -81,9 +106,10 @@ p {
 
   <!-- footer section of the main page  -->
   <footer>
-    <h4>&#169;2024 MIT Books Store. All rights reserved | <a href="contact-us.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="faqs.html">FAQs</a></h4>
+    <h4>&#169;2024 MIT Books Store. All rights reserved | <a href="contact-us.html">Contact Us</a> | <a
+        href="privacy-policy.html">Privacy Policy</a> | <a href="faqs.html">FAQs</a></h4>
   </footer>
-  
+
 </body>
 
 </html>
