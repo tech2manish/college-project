@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Books Store | Checkout</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container>h1 {
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40vh;
+        }
+
+        /* Payment form styles */
+        .payment-form {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 50px 20px 30px;
+            width: 65%;
+        }
+
+        #payment-method {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #payment-method p,
+        input {
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #payment-method p:hover {
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .makePaymentBtn {
+            margin: 30px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .makePaymentBtn a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .makePaymentBtn a:hover {
+            text-decoration: none;
+            background-color: #0056b3;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Your existing CSS styles here */
+
+        #card-details {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src=".//Photos/logo.png" alt="">
+        <h1>MIT Books Store</h1>
+    </header>
+
+    <nav>
+        <div class="left-nav">
+            <a href="#" id="toggleButton"><img src="/Photos/menu.png" alt="menu"></a>
+            <a href="index.html">Home</a>
+            <a href="#" id="showProduct">Catalogue</a>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="our-teams.html">Our Teams</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </li>
+        </div>
+    </nav>
+    <!-- nav bar code ends here -->
+
+    <!-- main contant of this page starts header -->
+
+    <div class="container">
+        <h1>Payment Method</h1>
+    </div>
+
+    <main>
+        <section class="payment-form">
+            <h2>Choose Payment Mode</h2>
+            <form id="payment-form" action="#" method="post">
+                <div id="payment-method">
+                    <p onclick="paymentAlert()"><input type="radio" id="upi" class="pay-mode-radio"
+                            name="payment-option" value="upi">UPI</p>
+
+                    <p onclick="paymentAlert()"><input type="radio" id="internet-banking" class="pay-mode-radio"
+                            name="payment-option" value="internet-banking">Internet Banking</p>
+
+                    <p onclick="selectRadio()"><input type="radio" id="card" class="pay-mode-radio"
+                            name="payment-option" value="card">Credit/Debit Card</p>
+
+                    <p onclick="paymentAlert()"><input type="radio" id="cash-on-delivery" class="pay-mode-radio"
+                            name="payment-option" value="cash-on-delivery">Cash on Delivery</p>
+                </div>
+
+                <div id="card-details" style="display: none;">
+                    <h2>Enter Card Details</h2>
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+
+                    <label for="card-holder">Cardholder Name:</label>
+                    <input type="text" id="card-holder" name="card-holder" required>
+
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                    
+                </div>
+
+                <div class="makePaymentBtn"><a href="confirmation-page.html">Place Order</a></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- main contant of this page ends header -->
+
+
+    <!-- footer section of the main page  -->
+    <footer>
+        <h4>&#169;2024 MIT Books Store. All rights reserved | <a href="contact-us.html">Contact Us</a> | <a
+                href="privacy-policy.html">Privacy Policy</a> | <a href="faqs.html">FAQs</a></h4>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function paymentAlert() {
+            var radioBtn = document.getElementsByClassName('pay-mode-radio');
+            if (radioBtn) {
+                alert("Currently This payment method is not working Please select another one. Recomended payment mode is CREDIT/DEBIT CARD");
+                radioBtn.checked = false;
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

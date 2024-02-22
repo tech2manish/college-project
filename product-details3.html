@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Books Store | Product Details</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .product-image {
+            padding-left: 100px;
+            width: 400px;
+            height: auto;
+        }
+
+
+        .product-image img {
+            width: 200px;
+            height: auto;
+        }
+
+        .product-info {
+            max-width: 600px;
+        }
+
+        .product-info a {
+            text-decoration: none;
+            background-color: #e7184f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .product-info a:hover {
+            text-decoration: none;
+            background-color: #e7184fdd;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reviews,
+        .related-products {
+            margin: 0px 10% 0px 10%;
+            max-width: 80%;
+        }
+
+        .review {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-author {
+            font-weight: bold;
+        }
+
+        .review-rating {
+            color: #f39c12;
+            /* Yellow color for ratings */
+        }
+
+        .review-btn{
+            text-decoration: none;
+            background-color: #0f9a00;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .review-btn:hover{
+            text-decoration: none;
+            background-color: #0f9a00b9;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .related-products {
+            margin-bottom: 100px;
+            grid-auto-flow: row;
+        }
+
+        .related-products-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .related-product {
+            margin: 15px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .related-product:hover {
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 0px 0px 17px 10px rgba(0, 0, 0, 0.13);
+            cursor: pointer;
+        }
+
+        .related-product img {
+            position: relative;
+            height: 300px;
+        }
+
+        hr {
+            width: 80%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src=".//Photos/logo.png" alt="">
+        <h1>MIT Books Store</h1>
+    </header>
+
+    <nav>
+        <div class="left-nav">
+            <a href="#" id="toggleButton"><img src="/Photos/menu.png" alt="menu"></a>
+            <a href="index.html">Home</a>
+            <a href="#" id="showProduct">Catalogue</a>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="our-teams.html">Our Teams</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </li>
+        </div>
+        <!-- <div class="right-nav">
+            <input type="search" name="search" id="searchInput" oninput="filterCards()" placeholder="Search">
+            <a href="#" class="showLogin">Login/Signup</a>
+            <a href="#"><img src="/Photos/shopping-bag.png" alt="sopping bag"></a>
+        </div> -->
+    </nav>
+
+    <main>
+        <div class="product-image">
+            <img src="./Photos/img9.webp" alt="Book Cover">
+        </div>
+        <div class="product-info">
+            <h2>Physics Part-1 NCERT Book For Class 12</h2>
+            <p>Author: NCERT Publications</p>
+            <p>Price: &#8377;210.00</p>
+            <p>Description: NCERT Physics, CBSE, BSEB, 12th, English, Physics Part-1</p>
+            <br><br>
+            <a style="margin-right: 25px ;" href="checkout-address.html">Buy Now</a>
+            <a href="checkout-address.html">Add to Cart</a>
+        </div>
+    </main>
+    <br>
+    <hr>
+    <br>
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <div class="review-author">Sonu kumar</div>
+            <div class="review-rating">★★★★☆</div>
+            <div class="review-comment">Great book! Highly recommended.</div>
+        </div>
+        <div class="review">
+            <div class="review-author">Raushan Kumar</div>
+            <div class="review-rating">★★★★☆</div>
+            <div class="review-comment">This site is very helpfull for Book readers.</div>
+        </div>
+        <!-- Add more reviews here -->
+        <br>
+        <a class="review-btn" href="review-page.html">Add a Review</a>
+    </section>
+
+    <section class="related-products">
+        <h2>Related Products</h2>
+        <div class="related-products-container">
+            <div class="related-product">
+                <img src="./Photos/img2.webp" alt="Related Product 1">
+                <p>Related Product 1</p>
+            </div>
+            <div class="related-product">
+                <img src="./Photos/img3.webp" alt="Related Product 2">
+                <p>Related Product 2</p>
+            </div>
+            <div class="related-product">
+                <img src="./Photos/img3.webp" alt="Related Product 2">
+                <p>Related Product 2</p>
+            </div>
+            <div class="related-product">
+                <img src="./Photos/img3.webp" alt="Related Product 2">
+                <p>Related Product 2</p>
+            </div>
+        </div>
+        <!-- Add more related products here -->
+    </section>
+    <!-- footer section of the main page  -->
+    <footer>
+        <h4>&#169;2024 MIT Books Store. All rights reserved | <a href="contact-us.html">Contact Us</a> | <a
+                href="privacy-policy.html">Privacy Policy</a> | <a href="faqs.html">FAQs</a></h4>
+                
+
+    </footer>
+
+</body>
+
+</html>

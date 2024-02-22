@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Books Store | Review</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #customer-review {
+            color: #000;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            margin-top: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .review {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-author {
+            font-weight: bold;
+        }
+
+        .review-rating {
+            color: #f39c12;
+            /* Yellow color for ratings */
+        }
+
+        .review-comment {
+            margin-top: 5px;
+        }
+
+        .review-form {
+            margin: 40px 0px 40px 0px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .review-form h2 {
+            margin-top: 0;
+        }
+
+        .review-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .review-form input[type="text"],
+        .review-form select,
+        .review-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .review-form textarea {
+            height: 100px;
+        }
+
+        .review-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .review-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src=".//Photos/logo.png" alt="">
+        <h1>MIT Books Store</h1>
+    </header>
+
+    <nav>
+        <div class="left-nav">
+            <a href="#" id="toggleButton"><img src="/Photos/menu.png" alt="menu"></a>
+            <a href="index.html">Home</a>
+            <a href="#" id="showProduct">Catalogue</a>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="our-teams.html">Our Teams</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </li>
+        </div>
+        <!-- <div class="right-nav">
+            <input type="search" name="search" id="searchInput" oninput="filterCards()" placeholder="Search">
+            <a href="#" class="showLogin">Login/Signup</a>
+            <a href="#"><img src="/Photos/shopping-bag.png" alt="sopping bag"></a>
+        </div> -->
+    </nav>
+
+
+    <h1 id="customer-review">Customer Reviews</h1>
+    <main>
+        <section class="review">
+            <div class="review-author">Sonu kumar</div>
+            <div class="review-rating">★★★★☆</div>
+            <div class="review-comment">Great book! Highly recommended.</div>
+        </section>
+        <section class="review">
+            <div class="review-author">Raushan kumar</div>
+            <div class="review-rating">★★★★☆</div>
+            <div class="review-comment">This is great experience.</div>
+        </section>
+
+        <!-- Review Form Section -->
+        <section class="review-form">
+            <h2>Write a Review</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <!-- footer section of the main page  -->
+    <footer>
+        <h4>&#169;2024 MIT Books Store. All rights reserved | <a href="contact-us.html">Contact Us</a> | <a
+                href="privacy-policy.html">Privacy Policy</a> | <a href="faqs.html">FAQs</a></h4>
+
+
+    </footer>
+
+</body>
+
+</html>

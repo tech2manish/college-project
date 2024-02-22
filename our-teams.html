@@ -16,6 +16,13 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
             overflow: hidden;
         }
+
+        .our-team-container>h1 {
+            color: #000;
+            text-align: center;
+            padding: 10px 0 5px;
+        }
+
         .team-member {
             display: flex;
             flex-direction: row;
@@ -26,17 +33,20 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
+
         .team-member img {
             width: 240px;
             height: 240px;
             border-radius: 50%;
             margin-right: 40px;
         }
+
         .team-member:nth-child(even) img {
             order: 2;
             margin-right: 0px;
             margin-left: auto;
         }
+
         .team-member h2 {
             margin: 0;
             font-size: 30px;
@@ -48,10 +58,17 @@
             font-size: 22px;
             color: #666;
         }
+
         .team-member p {
             margin: 0;
             font-size: 18px;
             color: #666;
+        }
+
+        .social-icon img {
+            margin: 5px;
+            width: 40px;
+            height: auto;
         }
     </style>
 
@@ -89,38 +106,54 @@
 
     <main>
 
-        <div class="container">
-            <div class="team-member">
-                <img src=".//Photos/manish kumar.jpg" alt="Team Member 1">
-                <div>
-                    <h2>Manish Kumar</h2>
-                    <p class="position">Position: Team Head</p>
-                    <p>Description: Student at Meerut Institute of Technology, Meerut. Campus Ambassdor at MyGov India & Emertxe IT.</p>
+        <div class="our-team-container">
+            <h1>Our Teams</h1>
+            <div class="container">
+                <div class="team-member">
+                    <img src=".//Photos/manish kumar.jpg" alt="Team Member 1">
+                    <div>
+                        <h2>Manish Kumar</h2>
+                        <p class="position">Position: Team Head</p>
+                        <p>Description: Student at Meerut Institute of Technology, Meerut. Campus Ambassdor at MyGov
+                            India & Emertxe IT.</p>
+                        <br>
+                        <a class="social-icon" href="https://www.linkedin.com/in/tech2manish/"><img src=".//Photos/linkedin.png" alt="linkedin icon"></a>
+                        <a class="social-icon" href="https://twitter.com/tech2manish"><img src=".//Photos/twitter.png" alt="linkedin icon"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="team-member">
-                <div>
-                    <h2>Manish Chaudhury</h2>
-                    <p class="position">Position: Team Member</p>
-                    <p>Description: Student at Meerut Institute of Technology, Meerut.</p>
+                <div class="team-member">
+                    <div>
+                        <h2>Manish Chaudhury</h2>
+                        <p class="position">Position: Team Member</p>
+                        <p>Description: Student at Meerut Institute of Technology, Meerut.</p>
+                        <br>
+                        <a class="social-icon" href="#"><img src=".//Photos/linkedin.png" alt="linkedin icon"></a>
+                        <a class="social-icon" href="#"><img src=".//Photos/twitter.png" alt="linkedin icon"></a>
+                    </div>
+                    <img src=".//Photos/manish chaudhary.jpeg" alt="Team Member 2">
                 </div>
-                <img src=".//Photos/manish chaudhary.jpeg" alt="Team Member 2">
-            </div>
-            <div class="team-member">
-                <img src=".//Photos/aman faiz.jpg" alt="Team Member 3">
-                <div>
-                    <h2>Aman Faiz</h2>
-                    <p class="position">Position: Team Member</p>
-                    <p>Description: Student at Meerut Institute of Technology, Meerut.</p>
+                <div class="team-member">
+                    <img src=".//Photos/aman faiz.jpg" alt="Team Member 3">
+                    <div>
+                        <h2>Aman Faiz</h2>
+                        <p class="position">Position: Team Member</p>
+                        <p>Description: Student at Meerut Institute of Technology, Meerut.</p>
+                        <br>
+                        <a class="social-icon" href="#"><img src=".//Photos/linkedin.png" alt="linkedin icon"></a>
+                        <a class="social-icon" href="#"><img src=".//Photos/twitter.png" alt="linkedin icon"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="team-member">
-                <div>
-                    <h2>Dev kumar</h2>
-                    <p class="position">Position: Team Member</p>
-                    <p>Description: Student at Meerut Institute of Technology, Meerut.</p>
+                <div class="team-member">
+                    <div>
+                        <h2>Dev kumar</h2>
+                        <p class="position">Position: Team Member</p>
+                        <p>Description: Student at Meerut Institute of Technology, Meerut.</p>
+                        <br>
+                        <a class="social-icon" href="#"><img src=".//Photos/linkedin.png" alt="linkedin icon"></a>
+                        <a class="social-icon" href="#"><img src=".//Photos/twitter.png" alt="linkedin icon"></a>
+                    </div>
+                    <img src=".//Photos/dev kumar.png" alt="Team Member 4">
                 </div>
-                <img src=".//Photos/dev kumar.png" alt="Team Member 4">
             </div>
         </div>
 

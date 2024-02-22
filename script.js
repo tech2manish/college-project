@@ -76,4 +76,47 @@ function filterCards() {
 }
 // product search code ends here 
 
+// To make delivery address easy to fill code start.
+document.addEventListener('DOMContentLoaded', function() {
+  const billingForm = document.getElementById('billing-form');
+  const deliveryForm = document.getElementById('delivery-form');
+  const sameAddressCheckbox = document.getElementById('same-address');
 
+  sameAddressCheckbox.addEventListener('change', function() {
+      if (this.checked) {
+          deliveryForm.elements['delivery-name'].value = billingForm.elements['billing-name'].value;
+          deliveryForm.elements['delivery-mobile'].value = billingForm.elements['billing-mobile'].value;
+          deliveryForm.elements['delivery-email'].value = billingForm.elements['billing-email'].value;
+          deliveryForm.elements['delivery-address'].value = billingForm.elements['billing-address'].value;
+          deliveryForm.elements['delivery-city'].value = billingForm.elements['billing-city'].value;
+          deliveryForm.elements['delivery-zip'].value = billingForm.elements['billing-zip'].value;
+          deliveryForm.elements['delivery-country'].value = billingForm.elements['billing-country'].value;
+      } else {
+          // Clear delivery address fields
+          deliveryForm.reset();
+      }
+  });
+});
+// To make delivery address easy to fill code end.
+
+// Paymet method code start here.
+document.addEventListener('DOMContentLoaded', function() {
+  const paymentMethod = document.querySelectorAll('input[name="payment-option"]');
+  const cardDetails = document.getElementById('card-details');
+
+  // Function to show or hide card details based on selected payment method
+  function toggleCardDetails() {
+      if (this.value === 'card') {
+          cardDetails.style.display = 'block';
+      } else {
+          cardDetails.style.display = 'none';
+      }
+  }
+
+  // Add event listener to each payment method radio button
+  paymentMethod.forEach(function(method) {
+      method.addEventListener('change', toggleCardDetails);
+  });
+});
+
+// Paymet method code end here.

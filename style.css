@@ -184,10 +184,10 @@ main {
 #productContainer {
   display: flex;
   flex-wrap: wrap;
-/*   margin: -5px 10px 10px 10px;
+  margin: -5px 10px 10px 10px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
 }
 
 .product-card {
@@ -228,6 +228,7 @@ main {
 
 .add-to-cart {
   background-color: #e44d26;
+  text-decoration: none;
   color: #fff;
   padding: 10px 15px;
   border: none;

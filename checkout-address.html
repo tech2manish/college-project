@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Books Store | Checkout</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container>h1 {
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Main styles */
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        /* Address form styles */
+        .address-form {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 50px 20px 30px;
+            width: 50%;
+        }
+
+        /* Form label styles */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Form input styles */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Checkbox styles */
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        /* Button styles */
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src=".//Photos/logo.png" alt="">
+        <h1>MIT Books Store</h1>
+    </header>
+
+    <nav>
+        <div class="left-nav">
+            <a href="#" id="toggleButton"><img src="/Photos/menu.png" alt="menu"></a>
+            <a href="index.html">Home</a>
+            <a href="#" id="showProduct">Catalogue</a>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="our-teams.html">Our Teams</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </li>
+        </div>
+    </nav>
+    <!-- nav bar code ends here -->
+
+    <!-- main contant of this page starts header -->
+
+    <div class="container">
+        <h1>Billing & Delivery Address</h1>
+    </div>
+
+    <main>
+        <section class="address-form">
+            <h2>Billing Address</h2>
+            <form id="billing-form" action="#" method="post">
+                <label for="billing-name">Full Name:</label>
+                <input type="text" id="billing-name" name="billing-name" required>
+
+                <label for="billing-email">Email:</label>
+                <input type="email" id="billing-email" name="billing-email" required>
+
+                <label for="billing-mobile">Mobile Number:</label>
+                <input type="tel" id="billing-mobile" name="billing-mobile" required>
+
+                <label for="billing-address">Address:</label>
+                <textarea id="billing-address" name="billing-address" required></textarea>
+
+                <label for="billing-city">City:</label>
+                <input type="text" id="billing-city" name="billing-city" required>
+
+                <label for="billing-zip">Zip Code:</label>
+                <input type="text" id="billing-zip" name="billing-zip" required>
+
+                <label for="billing-country">Country:</label>
+                <input type="text" id="billing-country" name="billing-country" required>
+            </form>
+            <h2>Delivery Address</h2>
+            <input type="checkbox" id="same-address">
+            <label for="same-address">Same as Billing Address</label>
+            <form id="delivery-form" action="#" method="post">
+                <label for="delivery-name">Full Name:</label>
+                <input type="text" id="delivery-name" name="delivery-name" required>
+
+                <label for="delivery-email">Email:</label>
+                <input type="email" id="delivery-email" name="delivery-email" required>
+
+                <label for="delivery-mobile">Mobile Number:</label>
+                <input type="tel" id="delivery-mobile" name="delivery-mobile" required>
+
+                <label for="delivery-address">Address:</label>
+                <textarea id="delivery-address" name="delivery-address" required></textarea>
+
+                <label for="delivery-city">City:</label>
+                <input type="text" id="delivery-city" name="delivery-city" required>
+
+                <label for="delivery-zip">Zip Code:</label>
+                <input type="text" id="delivery-zip" name="delivery-zip" required>
+
+                <label for="delivery-country">Country:</label>
+                <input type="text" id="delivery-country" name="delivery-country" required>
+
+                <button type="submit"><a style="text-decoration: none;" href="payment-page.html">Save Address & Next</a></button>
+            </form>
+        </section>
+    </main>
+    <!-- main contant of this page ends header -->
+
+
+    <!-- footer section of the main page  -->
+    <footer>
+        <h4>&#169;2024 MIT Books Store. All rights reserved | <a href="contact-us.html">Contact Us</a> | <a
+                href="privacy-policy.html">Privacy Policy</a> | <a href="faqs.html">FAQs</a></h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
